@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     [Tooltip("In ms^-1")] [SerializeField] float ySpeed = 20f;
     [Tooltip("In ms^-1")] [SerializeField] float yRange = 4f;
+    [SerializeField] GameObject[] guns;
 
     [Header("Screen-position Based")]
     [SerializeField] float positionPitchFactor = -5f;
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
             transformX();
             transformY();
             processRotation();
+            processFiring();
         }
     }
 
@@ -74,5 +76,33 @@ public class Player : MonoBehaviour
 
         transform.localPosition = new Vector3(transform.localPosition.x,
             finalYPos, transform.localPosition.z);
+    }
+
+    private void processFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            ActivateGuns();
+        }
+        else
+        {
+            DeactivateGuns();
+        }
+    }
+
+    private void ActivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(true);
+        }
+    }
+
+    private void DeactivateGuns()
+    {
+        foreach (GameObject gun in guns)
+        {
+            gun.SetActive(false);
+        }
     }
 }
