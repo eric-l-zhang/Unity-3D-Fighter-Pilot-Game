@@ -7037,20 +7037,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4248845843280306, guid: a19af03b7c64771489f010af565cc649, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 30
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -3649377879752338385, guid: a19af03b7c64771489f010af565cc649, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a19af03b7c64771489f010af565cc649, type: 3}
 --- !u!4 &808600820 stripped
 Transform:
@@ -7058,47 +7045,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 808600819}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &808600821 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1469320689751860, guid: a19af03b7c64771489f010af565cc649,
+--- !u!95 &808600823 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 808600823, guid: a19af03b7c64771489f010af565cc649,
     type: 3}
   m_PrefabInstance: {fileID: 808600819}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &808600822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808600821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5c80f5de9ac4ff2a1f05475624e12f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathFX: {fileID: 3038326489514813261, guid: af088c890f221432aa58fb0238fe20e0, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 12
-  hitsLeft: 6
---- !u!95 &808600823
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808600821}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &820625375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7594,12 +7546,12 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 100
-  m_SplatMapDistance: 2000
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
-  m_DrawInstanced: 0
+  m_DrawInstanced: 1
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
   m_MaterialType: 0
@@ -11066,6 +11018,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Directional Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 190856653343598763, guid: 267a72b7639884f1a9bbe8332c5de8cf,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.5771182
+      objectReference: {fileID: 0}
+    - target: {fileID: 190856653343598763, guid: 267a72b7639884f1a9bbe8332c5de8cf,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.7926427
+      objectReference: {fileID: 0}
+    - target: {fileID: 190856653343598763, guid: 267a72b7639884f1a9bbe8332c5de8cf,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.9339623
       objectReference: {fileID: 0}
     - target: {fileID: 190856653343598762, guid: 267a72b7639884f1a9bbe8332c5de8cf,
         type: 3}
