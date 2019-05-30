@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4248845843280306}
   - component: {fileID: 33029633340997774}
   - component: {fileID: 23169957688585980}
-  - component: {fileID: -4708322875899746741}
+  - component: {fileID: -3649377879752338385}
   m_Layer: 0
-  m_Name: Ship_04
+  m_Name: Millenial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 1469320689751860}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -2.7109494}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -78,16 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &-4708322875899746741
-BoxCollider:
+--- !u!114 &-3649377879752338385
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469320689751860}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.38488346, y: 0.5146694, z: 0.17804615}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c5c80f5de9ac4ff2a1f05475624e12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathFX: {fileID: 3038326489514813261, guid: af088c890f221432aa58fb0238fe20e0, type: 3}
+  parent: {fileID: 0}
+  scorePerHit: 12
+  hitsLeft: 6
