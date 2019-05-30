@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 33830965679388596}
   - component: {fileID: 23413581245250402}
   - component: {fileID: 2122551951}
-  - component: {fileID: 1919242911}
-  - component: {fileID: 1919242910}
+  - component: {fileID: 1512989916}
   m_Layer: 0
   m_Name: Falcon
   m_TagString: Untagged
@@ -98,7 +97,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   scorePerHit: 12
   hitsLeft: 3
---- !u!95 &1919242911
+--- !u!95 &1512989916
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -117,22 +116,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1919242910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074994750746910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c5c80f5de9ac4ff2a1f05475624e12f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathFX: {fileID: 3038326489514813261, guid: af088c890f221432aa58fb0238fe20e0, type: 3}
-  parent: {fileID: 0}
-  scorePerHit: 12
-  hitsLeft: 10
 --- !u!1001 &772350226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,13 +185,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198440698820820494, guid: 726272ec78dd60649ab66aa049e44276,
         type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 100
+      propertyPath: InitialModule.startSize.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 198440698820820494, guid: 726272ec78dd60649ab66aa049e44276,
         type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 5
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 726272ec78dd60649ab66aa049e44276, type: 3}
@@ -287,13 +270,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198440698820820494, guid: 726272ec78dd60649ab66aa049e44276,
         type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 100
+      propertyPath: InitialModule.startSize.scalar
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 198440698820820494, guid: 726272ec78dd60649ab66aa049e44276,
         type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 5
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 726272ec78dd60649ab66aa049e44276, type: 3}
